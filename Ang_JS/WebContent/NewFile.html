@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src = "Scripts\angular.js"></script>
+<script type="text/javascript">
+
+var item = { 
+		
+		"itemName":"Television",
+		"itemImage":"images/tv.jpg",
+		"price":34000.00
+		
+};
+var item1 = { 
+		
+		"itemName":"Ac",
+		"itemImage":"images/ac.jpg",
+		"price":81000.00
+		
+};
+var item2 = { 
+		
+		"itemName":"Bed",
+		"itemImage":"images/bed.jpg",
+		"price":24000.00
+		
+};
+var item3 = { 
+		
+		"itemName":"Bed10001",
+		"itemImage":"images/bed1.jpg",
+		"price":18000.00
+		
+};
+var item4 = { 
+		
+		"itemName":"Bed23232",
+		"itemImage":"images/bed2.jpg",
+		"price":34000.00
+		
+};
+var item5 = { 
+		
+		"itemName":"Bed909",
+		"itemImage":"images/bed3.jpg",
+		"price":14000.50
+		
+};
+var item6 = { 
+		
+		"itemName":"Bed21312",
+		"itemImage":"images/bed4.jpg",
+		"price":21900.00
+		
+};
+ var app = angular.module("loopfilter",[]);
+ app.controller("itemController",function($scope){
+	
+  $scope.product = [item,item1,item2,item3,item4,item5,item6];
+});
+</script>
+</head>
+<body >
+
+<div data-ng-app = "loopfilter" data-ng-controller = "itemController">
+<input type="search" data-ng-model = "criteria" name = "criteria">
+<div data-ng-repeat = "x in product | filter:criteria | orderBy:['price']">
+<fieldset height =300 width =300 >
+<h1 data-ng-bind = "x.itemName">
+
+</h1>
+<img alt="product" data-ng-src="{{x.itemImage}}"></img>
+
+<h3 data-ng-bind = "x.price"></h3>
+
+</fieldset>
+</div></div>
+
+
+
+</body>
+</html>

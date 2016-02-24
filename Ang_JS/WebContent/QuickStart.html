@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html data-ng-app>
+<head>
+<meta charset="ISO-8859-1">
+<title>Angular JS Example</title>
+<script src = "Scripts\angular.js"></script>
+
+<script type="text/javascript">
+var app = angular.module("quick",[]);
+
+
+</script>
+</head>
+	
+		<body>
+
+			<div>
+				<label>Name:</label>
+				<input type="text" data-ng-model="yourName"
+					placeholder="Enter a name here">
+				<hr />
+
+				<h1>Hello {{yourName}}!</h1>
+			</div>
+			Welcome <p data-ng-bind="yourName">
+			<div data-ng-app="quick">{{ "Hello" + "World"}}</div>
+		</body>
+	
+
+</html>

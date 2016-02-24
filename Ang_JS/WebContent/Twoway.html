@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src = "Scripts\angular.js"></script>
+<script type="text/javascript">
+
+
+
+ var app = angular.module("twoway",[]);
+ app.controller("currController",function xyz($scope){
+	
+	$scope.inr=0.0;
+	$scope.convRate=55.00;
+	$scope.change = function(){
+		$scope.result=$scope.inr*$scope.convRate;
+	}
+	
+});
+ 
+ 
+</script>
+</head>
+<body >
+
+<div data-ng-app = "twoway" data-ng-controller = "currController">
+Indian Rupees <input type="text" name="inr" data-ng-model="inr" data-ng-change= "change()" >
+Conversion rate <input type="text" name="conv" data-ng-model="convRate" >
+Result <input type="text" name="result" data-ng-model="result">
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
