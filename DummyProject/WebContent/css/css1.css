@@ -1,0 +1,97 @@
+@CHARSET "ISO-8859-1";
+.header{
+	
+	float: right;
+	
+}
+.title
+{
+	background-color: orange;
+	width: 100%;
+	height: 30%;
+	
+	text-align: center;
+}
+.menu
+{
+	background-color: pink;
+	border: threedface;
+	
+}
+a.link{
+	background-color: yellow;
+}
+form
+{
+	
+	border: medium;
+	
+}
+
+footer{
+	background-color: orange;
+	width: 100%;
+	height: 30%;
+	padding-bottom: 30px;
+	text-align: center;
+	
+}
+h1{
+	
+	text-align: center;
+	text-shadow: aqua;
+	color: blue;
+	
+}
+.Location{
+	float: right;
+}
+input[type="button"].adder
+{
+	float:right;
+}
+table{
+	
+	border: 1px solid blue;
+	margin-left:  auto;
+	margin-right: auto;
+	width: 50%;
+	border-collapse: collapse;
+}
+
+tr,td,th{
+	
+	border: 1px solid blue;
+	text-align: center;
+} 
+h5 {   
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}@keyframes blink {
+  0% {
+    opacity: 1;
+    color: pink;
+  }
+
+  25% {
+    color: green;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    color: blue;
+  }
+
+  75% {
+   opacity: 0;
+   color: orange;
+ }
+
+ 100% {
+   opacity: 1;
+   color: pink;
+ }
+}
